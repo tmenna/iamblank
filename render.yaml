@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: I am Blank Page
+    name: iamblank
     runtime: static
     branch: main
-    buildCommand: npm install -g pnpm && pnpm install && pnpm --filter @workspace/I am blank Page WorkSP run build
-    staticPublishPath: ./artifacts/I am blank Page WorkSP/dist/public
+    buildCommand: npm install -g pnpm && pnpm install && pnpm --filter @workspace/iamblankworkspace run build
+    staticPublishPath: ./artifacts/iamblankworkspace/dist/public
     envVars:
       - key: NODE_ENV
         value: production
